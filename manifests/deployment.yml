@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: interviewprep 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: interviewprep
+  template:
+    metadata:
+      labels:
+        app: interviewprep 
+    spec:
+      containers:
+        - name: interviewprep 
+          image: oovavitapharmacy.azurecr.io/interviewprep
+          ports:
+          - containerPort: 8080
