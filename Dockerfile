@@ -4,8 +4,8 @@ RUN mkdir /build
 WORKDIR /build
 
 RUN export GO111MODULE=on 
-RUN go get github.com/AdminTurnedDevOps/Interview-Prep/app
-RUN cd /build && git clone https://github.com/AdminTurnedDevOps/Interview-Prep.git
+RUN go get github.com/oortizmcp/Interview-Prep-1.git
+RUN cd /build && git clone https://github.com/oortizmcp/Interview-Prep-1.git
 
 RUN cd /build/Interview-Prep/app && go build
 
