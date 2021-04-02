@@ -7,8 +7,8 @@ RUN export GO111MODULE=on
 RUN go get github.com/oortizmcp/Interview-Prep-1/app
 RUN cd /build && git clone https://github.com/oortizmcp/Interview-Prep-1.git
 
-RUN cd /build/Interview-Prep/app && go env -w GO111MODULE=auto && go build 
+RUN cd /build/Interview-Prep-1/app && go env -w GO111MODULE=auto && go build 
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/build/Interview-Prep/app/app" ]
+ENTRYPOINT [ "/build/Interview-Prep1/app/app" ]
