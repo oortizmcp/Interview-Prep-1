@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: avitainterview 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: avitainterview
+  template:
+    metadata:
+      labels:
+        app: avitainterview 
+    spec:
+      containers:
+        - name: avitainterview 
+          image: oovavitapharmacy.azurecr.io/avitainterview
+          ports:
+          - containerPort: 8080
