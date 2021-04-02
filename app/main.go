@@ -16,11 +16,11 @@ func main() {
 	request()
 }
 
-func youtubeinterview(response http.ResponseWriter, r *http.Request) {
+func AvitaInterview(response http.ResponseWriter, r *http.Request) {
 	interviewtype := []interview{
 		interview{
-			Message:   "YouTube Interview",
-			Timestamp: 01152020,
+			Message:   "Avita Pharmacy Interview",
+			Timestamp: 04022021,
 		},
 	}
 
@@ -30,7 +30,7 @@ func youtubeinterview(response http.ResponseWriter, r *http.Request) {
 }
 
 func request() {
-	http.HandleFunc("/", youtubeinterview)
+	http.HandleFunc("/", AvitaInterview)
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
