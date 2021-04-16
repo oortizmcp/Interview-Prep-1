@@ -3,9 +3,9 @@
 name: CI
 
 env: 
-  resourceGroup: 'AVITA'
+  resourceGroup: 'yourRG'
   kubernetesVersion: '1.19.6'
-  name: 'avitainterviewcluster'
+  name: 'clustername'
 
 # Controls when the action will run. 
 on:
